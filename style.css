@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f7fafc;
+    color: #2d3748;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* شريط الهيدر الموحد */
+.main-navbar {
+    background-color: #243b55;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #319795;
+}
+
+.user-welcome {
+    font-size: 13px;
+    color: #cbd5e0;
+}
+
+.logout-btn {
+    color: #fc8181 !important;
+    font-weight: bold;
+}
+
+.lang-switch-btn {
+    background: #2c7a7b;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* تصميم الـ Hero Section المدمج */
+.hero-wrapper {
+    background: linear-gradient(to left, #e6fffa, #ffffff);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.hero-text-side {
+    flex: 1.2;
+}
+
+.hero-main-title {
+    color: #234e52;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.hero-sub-title {
+    color: #4a5568;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.search-form-container form {
+    display: flex;
+    background: white;
+    border: 2px solid #319795;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+.search-form-container input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    font-family: inherit;
+    outline: none;
+}
+
+.search-form-container button {
+    background: #319795;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-image-side {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image-side img {
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* التوزيع الرئيسي للموقع */
+.main-layout-grid {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.cards-section {
+    flex: 3;
+}
+
+.sidebar-section {
+    flex: 1;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.block-title {
+    font-size: 16px;
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* شبكة بطاقات الأطباء الحمائية ضد التداخل */
+.doctors-clean-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.doctor-clean-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.01);
+}
+
+.avatar-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 12px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #edf2f7;
+}
+
+.avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-clean-card h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.spec-text {
+    font-size: 13px;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.price-text {
+    color: #dd6b20;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.action-booking-btn {
+    display: block;
+    background: #2b6cb0;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* صندوق أيقونات التخصصات الجانبي */
+.specialties-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+spec-icon-item {
+    background: #edf2f7;
+    text-decoration: none;
+    color: #2d3748;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.spec-icon-item:hover {
+    background: #e2e8f0;
+    transform: scale(1.02);
+}
+
+/* شريط الميزات السفلي ثلاثي الأقسام */
+.features-footer-bar {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.feature-item {
+    font-size: 14px;
+    color: #4a5568;
+    font-weight: bold;
+    cursor: pointer;
+}
