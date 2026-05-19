@@ -1,4 +1,12 @@
 <?php
+// تفعيل إظهار الأخطاء برمجياً لمعرفة سبب الصفحة البيضاء على السيرفر
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+include 'db.php';
+include 'header.php';
+// باقي كود ملف index.php الطبيعي...
 /** @var PDO $pdo */
 include 'db.php';
 include 'header.php';
